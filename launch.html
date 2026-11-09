@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Launch | SMART Patient App</title>
+</head>
+<body>
+  <main>
+    <h1>Launch Stub</h1>
+    <p>This page marks the entry point for future SMART authorization.</p>
+    <p><a href="./">Back to the app</a></p>
+    <!--
+      After loading the SMART client library and registering a public client,
+      start authorization with the settings for the selected launch mode:
+      FHIR.oauth2.authorize({
+        clientId: "REGISTERED_PUBLIC_CLIENT_ID",
+        redirectUri: new URL("./", location.href).href,
+        scope: "launch/patient"
+      });
+      Standalone: configure the FHIR server and request patient context.
+      EHR launch: use the incoming iss and launch parameters and the launch scope.
+      Add the specific resource permissions required by the eventual app.
+    -->
+  </main>
+</body>
+</html>
