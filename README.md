@@ -1,3 +1,33 @@
+
+# EMS-to-Hospital FHIR Handoff
+
+## Purpose
+This application helps emergency department clinicians review
+prehospital EMS assessments and working diagnoses.
+
+## FHIR Version
+FHIR R4
+
+## Resources
+- Patient: fictional patient demographics
+- Encounter: EMS prehospital call
+- Condition: EMS provisional diagnosis
+- ClinicalImpression: EMS assessment and reasoning
+- Encounter: hospital emergency visit
+- Condition: hospital diagnosis
+
+## Workflow
+1. EMS evaluates the patient.
+2. EMS creates a prehospital Encounter.
+3. EMS records a provisional Condition.
+4. EMS documents a ClinicalImpression.
+5. Hospital creates its own Encounter.
+6. Hospital Encounter references the EMS Condition.
+7. Hospital records its own Condition.
+
+All patient information is synthetic.
+
+
 # SMART Patient App
 
 A build-free teaching scaffold for GitHub Pages. The HTML comments mark the future SMART authorization and callback steps. All pages serve static content.
